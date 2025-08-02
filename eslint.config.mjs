@@ -14,3 +14,12 @@ const eslintConfig = [
 ];
 
 export default eslintConfig;
+export const config = {
+  root: true,
+  extends: eslintConfig,
+  rules: {
+    "no-console": "warn",
+    "react/react-in-jsx-scope": "off",
+    "@next/next/no-img-element": "off",
+  },
+};
